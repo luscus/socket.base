@@ -14,7 +14,7 @@ describe('socket.lib.base:', function () {
 
   it('init', function () {
     base.should.have.property('init');
-    base.init.should.be.an('object');
+    base.init.should.be.an('function');
     base.init.should.deep.equal(socket.init);
   });
 

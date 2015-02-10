@@ -7,8 +7,9 @@
 require('chai').should();
 
 var EventEmitter = require('events').EventEmitter;
-var pattern      = require('../../lib/domains/pattern');
-var validation   = require('../../lib/domains/validation');
+var tools        = require('socket.lib.tools');
+var validation   = require('../lib/validation');
+var pattern      = tools.pattern;
 
 var info = {name: 'socket.protocol.http'};
 var emitter = new EventEmitter();
@@ -26,43 +27,14 @@ var socket  = {
 };
 
 
-describe('Validation Library Methods:', function () {
+describe('Validation Methods:', function () {
 
-  describe('socketObject:', function () {
+  describe('commonOptions:', function () {
 
     it('exists', function () {
-      validation.should.have.property('socketObject');
-      validation.socketObject.should.be.a('function');
+      validation.should.have.property('commonOptions');
+      validation.commonOptions.should.be.a('function');
     });
 
-    it('handle socket object', function () {
-      var _socket = validation.socketObject(socket, info);
-
-      describe('properties:', function () {
-
-        it('realSocketObject exists', function () {
-          _socket.should.have.property('realSocketObject', true);
-        });
-
-        it('config.model exists', function () {
-          _socket.config.should.have.property('model', pattern.CLIENT_MODEL_NAME);
-        });
-      });
-    });
-
-    it('handle non socket object', function () {
-      var _socket = validation.socketObject(config, info);
-
-      describe('properties:', function () {
-
-        it('realSocketObject does not exists', function () {
-          _socket.should.not.have.property('realSocketObject');
-        });
-
-        it('config.model exists', function () {
-          _socket.config.should.have.property('model', pattern.CLIENT_MODEL_NAME);
-        });
-      });
-    });
   });
 });
