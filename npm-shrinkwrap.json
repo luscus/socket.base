@@ -1,6 +1,6 @@
 {
   "name": "socket.base",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "dependencies": {
     "application.mixin.automaton": {
       "version": "0.0.2",
@@ -45,8 +45,9 @@
       }
     },
     "socket.model.client": {
-      "version": "0.0.1",
-      "from": "socket.model.client@0.0.1",
+      "version": "0.0.3",
+      "from": "socket.model.client@0.0.3",
+      "resolved": "https://registry.npmjs.org/socket.model.client/-/socket.model.client-0.0.3.tgz",
       "dependencies": {
         "prototype-less": {
           "version": "0.0.2",
@@ -56,8 +57,9 @@
       }
     },
     "socket.model.server": {
-      "version": "0.0.1",
-      "from": "socket.model.server@0.0.1"
+      "version": "0.0.2",
+      "from": "socket.model.server@0.0.2",
+      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.2.tgz"
     }
   }
 }
