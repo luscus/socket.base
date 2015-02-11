@@ -1,6 +1,6 @@
 {
   "name": "socket.base",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "dependencies": {
     "application.mixin.automaton": {
       "version": "0.0.2",
@@ -51,15 +51,14 @@
       "dependencies": {
         "prototype-less": {
           "version": "0.0.2",
-          "from": "https://registry.npmjs.org/prototype-less/-/prototype-less-0.0.2.tgz",
-          "resolved": "https://registry.npmjs.org/prototype-less/-/prototype-less-0.0.2.tgz"
+          "from": "prototype-less@0.0.2"
         }
       }
     },
     "socket.model.server": {
-      "version": "0.0.2",
-      "from": "socket.model.server@0.0.2",
-      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.2.tgz"
+      "version": "0.0.3",
+      "from": "socket.model.server@0.0.3",
+      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.3.tgz"
     }
   }
 }
