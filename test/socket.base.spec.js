@@ -7,6 +7,7 @@
 require('chai').should();
 
 var base         = require('../lib/socket.base');
+var tools        = require('socket.lib.tools');
 var socket       = require('../lib/socket');
 var serverModel  = require('socket.model.server');
 var clientModel  = require('socket.model.client');
@@ -39,6 +40,12 @@ describe('socket.lib.base:', function () {
       base.models.server.should.deep.equal(serverModel);
     });
 
+  });
+
+  it('tools property exists', function () {
+    base.should.have.property('tools');
+    base.tools.should.be.an('object');
+    base.tools.should.deep.equal(tools);
   });
 
 });
