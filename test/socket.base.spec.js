@@ -6,8 +6,10 @@
 
 require('chai').should();
 
-var base    = require('../lib/socket.base');
-var socket  = require('../lib/socket');
+var base         = require('../lib/socket.base');
+var socket       = require('../lib/socket');
+var serverModel  = require('socket.model.server');
+var clientModel  = require('socket.model.client');
 
 
 describe('socket.lib.base:', function () {
@@ -16,6 +18,27 @@ describe('socket.lib.base:', function () {
     base.should.have.property('init');
     base.init.should.be.an('function');
     base.init.should.deep.equal(socket.init);
+  });
+
+  it('models property exists', function () {
+    base.should.have.property('models');
+    base.models.should.be.an('object');
+  });
+
+  describe('models:', function () {
+
+    it('client exists', function () {
+      base.models.should.have.property('client');
+      base.models.client.should.be.an('object');
+      base.models.client.should.deep.equal(clientModel);
+    });
+
+    it('server exists', function () {
+      base.models.should.have.property('server');
+      base.models.server.should.be.an('object');
+      base.models.server.should.deep.equal(serverModel);
+    });
+
   });
 
 });
