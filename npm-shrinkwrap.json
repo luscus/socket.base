@@ -1,6 +1,6 @@
 {
   "name": "socket.base",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "dependencies": {
     "application.mixin.automaton": {
       "version": "0.0.2",
@@ -45,9 +45,9 @@
       }
     },
     "socket.model.client": {
-      "version": "0.0.6",
-      "from": "socket.model.client@0.0.6",
-      "resolved": "https://registry.npmjs.org/socket.model.client/-/socket.model.client-0.0.6.tgz",
+      "version": "0.0.7",
+      "from": "socket.model.client@0.0.7",
+      "resolved": "https://registry.npmjs.org/socket.model.client/-/socket.model.client-0.0.7.tgz",
       "dependencies": {
         "prototype-less": {
           "version": "0.1.1",
@@ -69,14 +69,14 @@
       }
     },
     "socket.model.server": {
-      "version": "0.0.4",
-      "from": "socket.model.server@0.0.4",
-      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.4.tgz",
+      "version": "0.0.5",
+      "from": "socket.model.server@0.0.5",
+      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.5.tgz",
       "dependencies": {
         "prototype-less": {
           "version": "0.1.1",
-          "from": "http://artifactory.timocom.net/artifactory/api/npm/libs-bic-mirror/prototype-less/-/prototype-less-0.1.1.tgz",
-          "resolved": "http://artifactory.timocom.net/artifactory/api/npm/libs-bic-mirror/prototype-less/-/prototype-less-0.1.1.tgz",
+          "from": "https://registry.npmjs.org/prototype-less/-/prototype-less-0.1.1.tgz",
+          "resolved": "https://registry.npmjs.org/prototype-less/-/prototype-less-0.1.1.tgz",
           "dependencies": {
             "node.extend": {
               "version": "1.1.2",
@@ -84,7 +84,7 @@
               "dependencies": {
                 "is": {
                   "version": "2.0.2",
-                  "from": "is@~2.0.0"
+                  "from": "is@2.0.2"
                 }
               }
             }
