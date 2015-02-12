@@ -1,6 +1,6 @@
 {
   "name": "socket.base",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "dependencies": {
     "application.mixin.automaton": {
       "version": "0.0.2",
@@ -45,20 +45,52 @@
       }
     },
     "socket.model.client": {
-      "version": "0.0.3",
-      "from": "socket.model.client@0.0.3",
-      "resolved": "https://registry.npmjs.org/socket.model.client/-/socket.model.client-0.0.3.tgz",
+      "version": "0.0.6",
+      "from": "socket.model.client@0.0.6",
+      "resolved": "https://registry.npmjs.org/socket.model.client/-/socket.model.client-0.0.6.tgz",
       "dependencies": {
         "prototype-less": {
-          "version": "0.0.2",
-          "from": "prototype-less@0.0.2"
+          "version": "0.1.1",
+          "from": "https://registry.npmjs.org/prototype-less/-/prototype-less-0.1.1.tgz",
+          "resolved": "https://registry.npmjs.org/prototype-less/-/prototype-less-0.1.1.tgz",
+          "dependencies": {
+            "node.extend": {
+              "version": "1.1.2",
+              "from": "node.extend@1.1.2",
+              "dependencies": {
+                "is": {
+                  "version": "2.0.2",
+                  "from": "is@2.0.2"
+                }
+              }
+            }
+          }
         }
       }
     },
     "socket.model.server": {
-      "version": "0.0.3",
-      "from": "socket.model.server@0.0.3",
-      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.3.tgz"
+      "version": "0.0.4",
+      "from": "socket.model.server@0.0.4",
+      "resolved": "https://registry.npmjs.org/socket.model.server/-/socket.model.server-0.0.4.tgz",
+      "dependencies": {
+        "prototype-less": {
+          "version": "0.1.1",
+          "from": "http://artifactory.timocom.net/artifactory/api/npm/libs-bic-mirror/prototype-less/-/prototype-less-0.1.1.tgz",
+          "resolved": "http://artifactory.timocom.net/artifactory/api/npm/libs-bic-mirror/prototype-less/-/prototype-less-0.1.1.tgz",
+          "dependencies": {
+            "node.extend": {
+              "version": "1.1.2",
+              "from": "node.extend@1.1.2",
+              "dependencies": {
+                "is": {
+                  "version": "2.0.2",
+                  "from": "is@~2.0.0"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
