@@ -17,8 +17,28 @@ describe('socket.lib.base:', function () {
 
   it('init', function () {
     base.should.have.property('init');
-    base.init.should.be.an('function');
+    base.init.should.be.a('function');
     base.init.should.deep.equal(socket.init);
+  });
+
+  it('generateId', function () {
+    base.should.have.property('generateId');
+    base.generateId.should.be.a('function');
+    base.generateId.should.deep.equal(socket.generateId);
+
+    var socketOptions = {
+      "name": "input",
+      "protocol": "ws",
+      "port": 25060,
+      "pattern": "pub"
+    };
+
+    base.generateId(socketOptions).should.be.a('string', serverModel.generateId(socketOptions));
+
+    socketOptions.pattern = 'sub';
+    socketOptions.model   = undefined;
+
+    base.generateId(socketOptions).should.be.a('string', clientModel.generateId(socketOptions));
   });
 
   it('models property exists', function () {
