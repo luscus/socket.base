@@ -1,10 +1,12 @@
-# socket.base
+# [socket.base](https://github.com/luscus/socket.base)
+
+[![NPM](https://nodei.co/npm/socket.base.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/socket.base/)
+
 [![NPM version](https://img.shields.io/npm/v/socket.base.svg?style=flat)](https://www.npmjs.com/package/socket.base "View this project on NPM")
-[![NPM downloads](https://img.shields.io/npm/dm/socket.base.svg?style=flat)](https://www.npmjs.com/package/socket.base "View this project on NPM")
 [![David](https://img.shields.io/david/luscus/socket.base.svg?style=flat)](https://david-dm.org/luscus/socket.base)
 [![David](https://img.shields.io/david/dev/luscus/socket.base.svg?style=flat)](https://david-dm.org/luscus/socket.base#info=devDependencies)
 [![NPM license](https://img.shields.io/npm/l/socket.base.svg?style=flat)](https://www.npmjs.com/package/socket.base "View this project on NPM")
-[![flattr](https://img.shields.io/badge/flattr-donate-yellow.svg?style=flat)](http://flattr.com/thing/3817419/luscus-on-GitHub)
+[![Omniref](https://img.shields.io/badge/Omniref-docs-orange.svg?style=flat)](https://www.omniref.com/js/npm/socket.base)
 
 A socket template providing basic behaviours and applying the correct [Socket Model](http://en.wikipedia.org/wiki/Network_socket#Socket_states_and_the_client-server_model)
 to [Application Framework](https://github.com/luscus/application.skeleton) Socket Objects.
