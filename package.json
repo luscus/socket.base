@@ -1,6 +1,6 @@
 {
   "name": "socket.base",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "license": "MIT",
   "main": "./lib/socket.base",
   "homepage": "https://github.com/luscus/socket.base",
