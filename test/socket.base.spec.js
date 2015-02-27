@@ -18,13 +18,11 @@ describe('socket.lib.base:', function () {
   it('init', function () {
     base.should.have.property('init');
     base.init.should.be.a('function');
-    base.init.should.deep.equal(protocol.init);
   });
 
   it('generateId', function () {
     base.should.have.property('generateId');
     base.generateId.should.be.a('function');
-    base.generateId.should.deep.equal(protocol.generateId);
 
     var socketOptions = {
       "name": "input",
