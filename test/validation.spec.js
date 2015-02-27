@@ -8,7 +8,7 @@ require('chai').should();
 
 var EventEmitter = require('events').EventEmitter;
 var tools        = require('socket.lib.tools');
-var validation   = require('../lib/validation');
+var validation   = require('../lib/type/protocol/validation');
 var pattern      = tools.pattern;
 
 var info = {name: 'socket.protocol.http'};

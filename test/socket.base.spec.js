@@ -8,7 +8,7 @@ require('chai').should();
 
 var base         = require('../lib/socket.base');
 var tools        = require('socket.lib.tools');
-var socket       = require('../lib/socket');
+var socket       = require('../lib/type/protocol/protocol');
 var serverModel  = require('socket.model.server');
 var clientModel  = require('socket.model.client');
 
@@ -18,13 +18,13 @@ describe('socket.lib.base:', function () {
   it('init', function () {
     base.should.have.property('init');
     base.init.should.be.a('function');
-    base.init.should.deep.equal(socket.init);
+    base.init.should.deep.equal(protocol.init);
   });
 
   it('generateId', function () {
     base.should.have.property('generateId');
     base.generateId.should.be.a('function');
-    base.generateId.should.deep.equal(socket.generateId);
+    base.generateId.should.deep.equal(protocol.generateId);
 
     var socketOptions = {
       "name": "input",
