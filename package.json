@@ -13,21 +13,21 @@
     "socket"
   ],
   "dependencies": {
-    "assert-plus": "0.1.5",
-    "node.extend": "1.1.3",
-    "package.root": "0.2.0",
-    "socket.lib.tools": "0.0.5",
+    "assert-plus": "1.0.0",
+    "node.extend": "1.1.6",
+    "package.root": "1.0.3",
+    "socket.lib.tools": "0.0.8",
     "socket.model.client": "0.0.17",
     "socket.model.server": "0.0.13"
   },
   "devDependencies": {
-    "grunt": "0.4.5",
+    "grunt": "1.0.1",
     "grunt-license-report": "0.0.8",
-    "grunt-contrib-jshint": "0.11.0",
-    "grunt-mocha-test": "0.12.7",
-    "load-grunt-tasks": "3.1.0",
-    "chai": "2.0.0",
-    "mocha": "2.1.0"
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-mocha-test": "0.13.2",
+    "load-grunt-tasks": "3.5.2",
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
   },
   "repository": {
     "type": "git",
